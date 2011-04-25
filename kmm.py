@@ -125,6 +125,9 @@ def add_task():
     count = 1
     while True:
         task_input = raw_input('{0}. '.format(count))
+        if not task_input:
+            print '(please enter a task)'
+            continue
         if task_input == '.':
             break
         # 0 signifies an incomplete task.
