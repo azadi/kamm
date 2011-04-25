@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 
-# Kamm (Punjabi for 'Work')
-# The easiest to-do list manager ever. No kidding!
-# Written by Sukhbir Singh. 
+# Kamm - The easiest to-do list manager ever. No kidding!
+# Written by Sukhbir Singh < www.sukhbir.in> 
 
 import os
 import sys
