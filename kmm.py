@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 # Kamm - The easiest to-do list manager ever. No kidding!
-# Written by Sukhbir Singh < www.sukhbir.in> 
+# Written by Sukhbir Singh < www.sukhbir.in > 
 
 import os
 import sys
