@@ -130,6 +130,9 @@ def add_task():
             continue
         if task_input == '.':
             break
+        # We can't allow a ',' so we replace it.
+        if ',' in task_input:
+            task_input = task_input.replace(',', ':')
         # 0 signifies an incomplete task.
         tasks.append(task_input + ',' + '0')
         tasks.append('\n')
