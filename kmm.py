@@ -108,10 +108,10 @@ def show_task():
     # In case you want to change how completed/ incompleted tasks are shown,
     # modify the print statement in the following code.
     print ''
-    for task, status in tasks_complete.iteritems():
-        print '[X] {0}'.format(task)
     for task, status in tasks_incomplete.iteritems():
         print '[ ] {0}'.format(task)
+    for task, status in tasks_complete.iteritems():
+        print '[X] {0}'.format(task)
     print ''
     print '{0} tasks ({1} completed).'.format(total_tasks, len(tasks_complete))
     sys.exit()
