@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 # Kamm - The easiest to-do list manager ever. No kidding!
-# Written by Sukhbir Singh < www.sukhbir.in > 
+# github.com/sukhbir/kamm
 
 import os
 import sys
@@ -113,7 +113,11 @@ def show_task():
     for task, status in tasks_complete.iteritems():
         print '[X] {0}'.format(task)
     print ''
-    print '{0} tasks ({1} completed).'.format(total_tasks, len(tasks_complete))
+
+    len_complete = len(tasks_complete)
+    print '{0} tasks ({1} incomplete, {2} complete)'.format(total_tasks,
+                                                        total_tasks-len_complete,
+                                                        len_complete)
     sys.exit()
 
 
